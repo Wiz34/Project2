@@ -7,4 +7,4 @@ i will have three scrollable bars of images videos and text when the images are 
 the videos will be able to play within the sliding bars. and the asteroid info will be on another page where user can search data based on input
 
 
-will also have a page that shows the APOD.. Astronomy picture of the day upon clicking a button, theres is a date parameter so i will potentially be able to make it random
+will also have a page that shows the APOD.. Astronomy picture of the day upon clicking a button, theres is a date parameter so potentially i will be able to use a click event to call random photos
