@@ -4,25 +4,17 @@ import './App.css';
 import { getNasa, getRoids, getApod } from './services/api-helper'
 import { Link, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Pics from './components/Pics'
+import Pic from './components/Pic'
 import Asteroids from './components/Asteroids'
+import Piclist from './components/Piclist'
+import Footer from './components/Footer';
 
 
 
 
 class App extends React.Component {
 
-  // async componentDidMount() {
-  //   const data = await getNasa()
-  //   console.log(data);
 
-  //   const apod = await getApod()
-  //   console.log(apod)
-  //   const roids = await getRoids()
-  //   console.log(roids)
-
-
-  // }
 
 
 
@@ -30,20 +22,20 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <Link to='/pics'>Home</Link>
-          <Link to='/'>Picture of the Day</Link>
+          <Link to='/'>Home</Link>
+          <Link to='/Pic'>Picture of the Day</Link>
           <Link to='/asteroids'>Asteroids</Link>
+          <Link to='/Piclist'>Pics</Link>
         </header>
         <main>
           <Route path='/' exact render={() => <Home />} />
-          <Route path='/pics' render={() => <Pics />} />
+          <Route path='/Pic' render={() => <Pic />} />
           <Route path='/asteroids' render={() => <Asteroids />} />
+          <Route path='/Piclist' render={() => <Piclist />} />
         </main>
-        <footer>
-          this is the footer
-        </footer>
 
 
+        <Footer />
       </div>
 
     );

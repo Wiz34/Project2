@@ -12,6 +12,6 @@ export const getRoids = async (startDate) => {
   return resp.data
 }
 export const getNasa = async () => {
-  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2019-6-13&api_key=${KEY}`)
+  const resp = await axios.get(`https://images-api.nasa.gov/search?q=asteroids&year_start=2019`)
   return resp.data
 }

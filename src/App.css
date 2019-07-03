@@ -1,17 +1,38 @@
 header {
   height: 100px;
-  background-color: lightblue;
+  width: 105%;
+  background-color: #2C429A;
   text-align: center;
   line-height: 100px;
+  margin: 0 auto;
+  
+  
+  
 }
 
 header a {
   margin: 5px;
+  color:white;
+  text-decoration: none;
+  opacity:0.7;
 }
+
+header a:hover {
+ 
+  color: yellow;
+  opacity: 9;
+  
+}
+
+
+
 
 main {
   min-height: 90vh;
-  background-color: yellow;
+  
+  background-position: center center;
+  
+  background-size: 100%;
 }
 
 #pod-box {
@@ -23,24 +44,96 @@ main {
 }
 
 #asteroid-date {
-text-align: center;
-}
-
-#asteroid-list {
-
-}
-
-#asteroid {
-border: 1px solid black;
+text-align: center ;
+color: black;
+background: linear-gradient(to right, #2C429A, #56618B );
 width: 60%;
 margin: 15px auto;
 padding: 20px;
 }
 
+#asteroid-list {
+  
+
+}
+
+#asteroid {
+border: 1px solid rgb(34, 16, 16);
+width: 60%;
+margin: 15px auto;
+padding: 20px;
+background: linear-gradient(to right, #2C429A, #56618B )
+}
+
 footer{
   height: 100px;
-  background-color: lightblue;
+  background-color: black;
   text-align: center;
   line-height: 100px;
 }
 
+#home-div {
+  
+  text-align: center;
+}
+
+#pod-descrip {
+  background-color: #2C429A;
+}
+
+#pod-title {
+  background-color: #2C429A;
+}
+
+#pod-box {
+  background-image: url('./components/images/nasa-space.jpg') ;
+}
+
+
+#pic-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+
+}
+
+.pix {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#milky {
+ width: 104.5%;
+height: 800px;
+border-color: yellow;
+border-width: 9px;
+border-style:solid;
+margin: 0 auto;
+}
+
+#planets-pic {
+  background-image: url('./components/images/drawn-planets.jpg') ;
+  
+}
+
+#pic-list:hover {
+  animation: pic-list 0.3s linear 1;
+}
+@keyframes pic-list {
+  50%  {transform: scale(1.2);}
+}
+#pic-list {
+  background-image: url("./components/images/stars.jpg");
+  
+}
+#wrapper {
+text-align: center;
+}
+
+#hero-title {
+  display: inline-block;
+}
